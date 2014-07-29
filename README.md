@@ -59,6 +59,6 @@ DonkeyGuard allows blocking access for any installed application on your phone t
 Simply use the features of github to report bugs or request new features.
 
 ## Preview
-![](http://www.bilderload.com/bild/348344/screenshot20140729093144UO8BJ.png)  
+![](http://www.bilderload.com/bild/348344/screenshot20140729093144UO8BJ.png)
 ![](http://www.bilderload.com/bild/348345/screenshot20140729093210D9G30.png)  ![](http://www.bilderload.com/bild/348346/screenshot20140729093216GY28T.png)  ![](http://www.bilderload.com/bild/348347/screenshot201407290932276TD10.png)   ![](http://www.bilderload.com/bild/348348/screenshot20140729093258VVWU5.png)  ![](http://www.bilderload.com/bild/348349/screenshot20140729093310VT431.png)  ![](http://www.bilderload.com/bild/348350/screenshot201407290933225VFFJ.png) 
 
