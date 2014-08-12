@@ -58,6 +58,24 @@ DonkeyGuard allows blocking access for any installed application on your phone t
 ## How can I report Bugs or feature requests?
 Simply use the features of github to report bugs or request new features.
 
+## Feature Descriptions
+### Deny Modes
+In the preferences you can find two options: 
+* Softcoded Default Deny Mode
+* Hardcoded Default Deny Mode
+
+Both of the "settings" are melt together with the architecture of the application. The modes protect you against IPC failures or database error during the request of personal data from an application. To understand how it works, just take a look at the figure below (sequence diagram; This diagram is not designed for software architectures, it is as simple as possible).
+
+![](http://www.bilderload.com/bild/349154/denymoderedcircleAJ3VY.png)
+
+The diagram shows you the sequence of the access to private data on your phone. The call of the method where the application normally gets the private data from will be forwarded to the **SettingsServer**. The server identifies the process with the assistance of the kernel and asks the **DatabaseManager** to get the user defined settings for the calling process. The Manager fetches the data (if needed) from the database and returns it to the **SettingsServer**. If anything went wrong with the communication between the SettingsServer, DatabaseManager or Database (red circle on the right; e.g. due to a broken database), the SettingsServer doesn't know if the application is allowed to access your private data or not. For this reason the Softcoded Default Deny mode will trigger and decide whether the application will get:
+
+* The real data (allow)
+* Fake randomized data (random)
+* Empty data (empty)
+
+
+
 ## Preview
 ![](http://www.bilderload.com/bild/348344/screenshot20140729093144UO8BJ.png)
 ![](http://www.bilderload.com/bild/348345/screenshot20140729093210D9G30.png)  ![](http://www.bilderload.com/bild/348346/screenshot20140729093216GY28T.png)  ![](http://www.bilderload.com/bild/348347/screenshot201407290932276TD10.png)   ![](http://www.bilderload.com/bild/348348/screenshot20140729093258VVWU5.png)  ![](http://www.bilderload.com/bild/348349/screenshot20140729093310VT431.png)  ![](http://www.bilderload.com/bild/348350/screenshot201407290933225VFFJ.png) 
