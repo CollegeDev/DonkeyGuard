@@ -68,13 +68,13 @@ Both of the "settings" are melt together with the architecture of the applicatio
 
 ![](http://www.bilderload.com/bild/349154/denymoderedcircleAJ3VY.png)
 
-The diagram shows you the sequence of the access to private data on your phone. The call of the method where the application normally gets the private data from will be forwarded to the **SettingsServer**. The server identifies the process with the assistance of the kernel and asks the **DatabaseManager** to get the user defined settings for the calling process. The Manager fetches the data (if needed) from the database and returns it to the **SettingsServer**. If something went wrong with the communication between the SettingsServer, DatabaseManager or Database (red circle on the right; e.g. due to a broken database), the SettingsServer doesn't know if the application is allowed to access your private data or not. For this reason the Softcoded Default Deny mode will trigger and decide whether the application will get:
+The diagram shows the sequence of the access to private data on your phone. The call of the method where the application normally gets the private data from will be forwarded to the **SettingsServer**. The server identifies the process with the assistance of the kernel and asks the **DatabaseManager** to get the user defined settings for the calling process. The Manager fetches the data (if needed) from the database and returns it to the **SettingsServer**. If something went wrong with the communication between the **SettingsServer**, **DatabaseManager** or **Database** (red circle on the right; e.g. due to a broken database), the **SettingsServer** doesn't know if the application is allowed to access your private data or not. For this reason the Softcoded Default Deny mode will trigger and decide whether the application will get:
 
 * The real data (allow)
 * Fake randomized data (random)
 * Empty data (empty)
 
-You can choose this behavior inside the preference fragment. If the Softcoded Default Deny mode or the IPC with the Settings-Server fails, the Hardcoded Default Deny Mode will trigger. This mode is "hardcoded" and can't be bypassed. It has the same behavior like the Softcoded Default Deny mode, but can not be modified by the user. In future I will provide 3 versions of the application where the Hardcoded Default Deny mode has following values:
+You can choose this behavior inside the preference fragment. If the Softcoded Default Deny mode or the IPC with the **SettingsServer** fails, the Hardcoded Default Deny Mode will trigger. This mode is "hardcoded" and can't be bypassed. It has the same behavior like the Softcoded Default Deny mode, but can not be modified by the user. In future I will provide 3 versions of the application where the Hardcoded Default Deny mode has following values:
 
 * Real (allow)
 * Random (randomized generated fake data)
