@@ -58,6 +58,10 @@ DonkeyGuard allows blocking access for any installed application on your phone t
 ## How can I report Bugs or feature requests?
 Simply use the features of github to report bugs or request new features.
 
+## FAQ
+### My device doesn't boot any more, what can I do?
+Deactivate the Xposed-Framework during the boot (press volume up/down several times). If that won't work for you, please flash the RescueDonkey.zip from this repo (branch rescue). This *.zip will normally be copied at the first start of the application to your default sdcard directory.
+
 ## Feature Descriptions
 ### Deny Modes
 In the preferences you can find two options: 
