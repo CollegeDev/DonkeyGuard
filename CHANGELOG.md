@@ -1,4 +1,16 @@
 ## Changelog
+### v0.5.39
+Bug-Fixes:
+* Reduced memory-cache to a maximum size of 5 MB for devices with small memory (512mb)
+* Fixed EditText input flags which causes that the lat/lon input won't accept "." and "-"
+* Enlarged Heap-Size on devices with enough memory
+* Reduced memory usage of the application
+
+Features:
+* ...
+
+- --
+
 ### v0.5.38
 Bug-Fixes:
 * ...
