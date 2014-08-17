@@ -49,7 +49,7 @@ DonkeyGuard allows blocking access for any installed application on your phone t
 * network_state
 
 ## Installation Instructions
-1. Download the application [(for now at xda)](http://forum.xda-developers.com/xposed/modules/app-donkeyguard-security-management-t2831556)
+1. Download the application (category releases)
 2. Install it
 3. Activate the application inside the XPosedFramework
 4. Reboot your device
