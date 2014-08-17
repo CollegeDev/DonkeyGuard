@@ -1,4 +1,17 @@
 ## Changelog
+### v0.5.40
+Bug-Fixes:
+* Fixed FC of application while trying to enter in application search-mode (wrong resoure linking)
+* Fixed style of overflow-button in settings menu
+* Pre-preparing for native support
+* Enhanced the copying procedure for the flashable Rescue-Zip (RescueDonkey.zip)
+* Fixed FC at first start of the application, because of some resource conflicts
+
+Features:
+* ...
+
+- --
+
 ### v0.5.39
 Bug-Fixes:
 * Reduced memory-cache to a maximum size of 5 MB for devices with small memory (512mb)
