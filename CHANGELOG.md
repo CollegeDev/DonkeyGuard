@@ -1,4 +1,14 @@
 ## Changelog
+### v0.5.41
+Bug-Fixes:
+* Fixed wrong resources usage for some dialogs
+* Refactoring for new features
+
+Features:
+* ...
+
+- --
+
 ### v0.5.40
 Bug-Fixes:
 * Fixed FC of application while trying to enter in application search-mode (wrong resoure linking)
