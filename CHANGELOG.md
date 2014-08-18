@@ -1,4 +1,14 @@
 ## Changelog
+### v0.5.42
+Bug-Fixes:
+* ...
+
+Features:
+* Enhanced checking for activation in XposedFramework.
+* Prepared for UI-Instructor
+
+- --
+
 ### v0.5.41
 Bug-Fixes:
 * Fixed wrong resources usage for some dialogs
