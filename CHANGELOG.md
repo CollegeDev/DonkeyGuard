@@ -1,4 +1,13 @@
 ## Changelog
+### v0.5.43
+Bug-Fixes:
+* Fixed XposedFramework validation
+
+Features:
+* ...
+
+- --
+
 ### v0.5.42
 Bug-Fixes:
 * ...
