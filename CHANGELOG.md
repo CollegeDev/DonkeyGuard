@@ -1,4 +1,15 @@
 ## Changelog
+### v0.5.44
+Bug-Fixes:
+* Some refactoring for new features
+
+Features:
+* Prepared for auto-log fetching feature -> added Permission android.permission.READ_LOGS (needed to enable better log support)
+* Implemented (beta) the UI-Instructor. Activate it with preference UI-Instructor to learn more about the UI.
+* Added Icon to indicate internet access. (Please activate the UI-Instructor to see how it works).
+
+- --
+
 ### v0.5.43
 Bug-Fixes:
 * Fixed XposedFramework validation
