@@ -55,6 +55,9 @@ DonkeyGuard allows blocking access for any installed application on your phone t
 4. Reboot your device
 5. Now you can use DonkeyGuard
 
+## Translation
+If you want to translate the application, please visit [GetLocalization](http://www.getlocalization.com/DonkeyGuard/). I will sync these files every release.
+
 ## How can I report Bugs or feature requests?
 Simply use the features of github to report bugs or request new features.
 
