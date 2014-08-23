@@ -1,4 +1,23 @@
 ## Changelog
+### v0.5.47
+Bug-Fixes:
+* Fixed GUI glitches within the settings screen
+
+Features:
+* Implemented a filter-manager
+
+- --
+
+### v0.5.45-46
+Bug-Fixes:
+* Fixed GPS Bug
+* Several cleanups
+
+Features:
+* ...
+
+- --
+
 ### v0.5.44
 Bug-Fixes:
 * Some refactoring for new features
