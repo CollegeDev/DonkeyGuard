@@ -1,4 +1,16 @@
 ## Changelog
+### v0.5.48
+Bug-Fixes:
+* Revamped GPS restriction
+* Enhanced battery usage (fixed bug where device isn't able deep sleep)
+* Added support for HTC devices (HTC has a lot of own stuff inside the framework)
+* Prepared for internet restriction
+
+Features:
+* ...
+
+- --
+
 ### v0.5.47
 Bug-Fixes:
 * Fixed GUI glitches within the settings screen
