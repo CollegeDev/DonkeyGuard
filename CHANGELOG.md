@@ -7,7 +7,9 @@ Bug-Fixes:
 * Prepared for internet restriction
 
 Features:
-* ...
+* Added language: Japanese -> thanks @WedyDQ10
+* Added language: Hebrew -> thanks @BeBest
+* Added language: Portuguese (Brazil) -> thanks @xdxita
 
 - --
 
