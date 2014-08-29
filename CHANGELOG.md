@@ -1,4 +1,17 @@
 ## Changelog
+### v0.5.49
+Bug-Fixes:
+* Enhanced battery usage 
+
+Features:
+* Added INTERNET restriction. It only works if you install the [Cydia-Framework](http://www.cydiasubstrate.com/). Known Issue: An existing connection (with an connection-based protocol) won't be disconnected by the rule, just reestablishing will be blocked ever after. So if you restrict Internet for an application, force close it or restart your device to be sure that it can't access the internet anymore.
+* Added the possibility to save the decision from interception dialog to database. [More details](https://github.com/CollegeDev/DonkeyGuard/issues/7). Simply check the option "Don't ask again" and your decision will be saved.
+* Updated language: Japanese -> thanks @[WedyDQ10](http://www.getlocalization.com/user/WedyDQ10)
+* Updated language: Portuguese (Brazil) -> thanks @[xdxita](http://www.getlocalization.com/user/xdxita)
+
+
+- --
+
 ### v0.5.48
 Bug-Fixes:
 * Revamped GPS restriction
