@@ -1,6 +1,17 @@
 ## Changelog
 ### v0.5.49
 Bug-Fixes:
+* Fixed filter manager rules
+
+Features:
+* Enhanced Internet restriction
+* Enabled on demand for internet restriction
+* Added language: Romanian, thanks @[flashxml](http://www.getlocalization.com/user/flashxml)
+
+- --
+
+### v0.5.49
+Bug-Fixes:
 * Enhanced battery usage 
 
 Features:
