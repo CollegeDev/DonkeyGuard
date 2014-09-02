@@ -1,5 +1,5 @@
 ## Changelog
-### v0.5.49
+### v0.5.50
 Bug-Fixes:
 * Fixed filter manager rules
 
