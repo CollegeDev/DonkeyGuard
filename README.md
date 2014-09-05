@@ -65,6 +65,15 @@ Simply use the features of github to report bugs or request new features.
 ### My device doesn't boot any more, what can I do?
 Deactivate the Xposed-Framework during the boot (press volume up/down several times). If that won't work for you, please flash the RescueDonkey.zip from this repo (branch rescue). This *.zip will normally be copied at the first start of the application to your default sdcard directory.
 
+### The internet restriction doesn't work, what can I do?
+You need to install the [Cydia Substrate](http://www.cydiasubstrate.com) Framework for Android. Simply download the Application from the PlayStore (or website) and install it. Then do following:
+
+* Open the Application
+* Tap the button "Link Substrate Files"
+* Restart your device
+
+Please make sure that DonkeyGuard is activated inside the XposedFramework, otherwise it won't work.
+
 ## Feature Descriptions
 ### Deny Modes
 In the preferences you can find two options: 
