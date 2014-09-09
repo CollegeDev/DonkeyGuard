@@ -299,9 +299,21 @@ ul li {
   padding-left: 20px;
 }
 
+.navi{
+	background-color: #E0E0E0;
+	border-radius: 3px;
+}
+
 .navi ul li {
 	display: inline-block;
 	list-style: none;
+}
+
+.navi ul li a:hover{
+	background-color: #CD051F;
+	border-radius: 3px;
+	color: #E8E8E8;
+	text-decoration: none;
 }
 
 ol li {
