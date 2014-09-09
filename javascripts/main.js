@@ -1,1 +1,6 @@
-console.log('This would be the main JS file.');
+$(function(){
+  $.when($("#header").load("header.html")).then(function(){
+      $("#main_content").removeClass('invisible');
+      $("#footer").load("footer.html");
+   }); 
+});
