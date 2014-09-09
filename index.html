@@ -3,6 +3,7 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script type="text/javascript" src="javascripts/jquery-2.1.1.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
@@ -11,36 +12,30 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <title>Donkeyguard by CollegeDev</title>
+    <script> 
+	    $(function(){
+	      $("#header").load("header.html");
+	      $("#footer").load("footer.html"); 
+	    });
+    </script>
   </head>
 
   <body>
     <div id="container">
       <div class="inner">
+      	<section id="header">
 
-        <header>
-          <h1>Donkeyguard</h1>
-          <h2>The ultimate Security Manager</h2>
-        </header>
-
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/CollegeDev/DonkeyGuard/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/CollegeDev/DonkeyGuard/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/CollegeDev/DonkeyGuard" id="view-on-github" class="button"><span>View on GitHub</span></a>
         </section>
-
-        <hr>
-
         <section id="main_content">
-          <p align="center">
-  <img src="http://www.bilderload.com/daten/senzatitolo2rdyP6NH9.jpg" alt="DonkeyGuard"></p>
+          
 
 <h2>
-<a name="what-is-donkeyguard" class="anchor" href="#what-is-donkeyguard"><span class="octicon octicon-link"></span></a>What is DonkeyGuard?</h2>
+<a name="what-is-donkeyguard" class="anchor" href="#what-is-donkeyguard"><span class="octicon octicon-link">&nbsp;</span></a>What is DonkeyGuard?</h2>
 
 <p>DonkeyGuard is an app, similar to PDroid2.0, PDroid and other applications which are known at this sector. I developed DonkeyGuard from scratch with all my experience I've made with PDroid. DonkeyGuard allows you a fine-grained tuning of access to your private data. It currently supports 41 restrictions which can be applied for every application. Specifically, it is a Privacy service provider which implements a set of modifications to the Android Framework to allow you to interact with applications which are trying to access your private data.</p>
 
 <h2>
-<a name="supported-features" class="anchor" href="#supported-features"><span class="octicon octicon-link"></span></a>Supported Features</h2>
+<a name="supported-features" class="anchor" href="#supported-features"><span class="octicon octicon-link">&nbsp;</span></a>Supported Features</h2>
 
 <p>DonkeyGuard allows blocking access for any installed application on your phone to the following data separately:</p>
 
@@ -87,7 +82,7 @@
 <li>write_mms</li>
 <li>network_state</li>
 </ul><h2>
-<a name="installation-instructions" class="anchor" href="#installation-instructions"><span class="octicon octicon-link"></span></a>Installation Instructions</h2>
+<a name="installation-instructions" class="anchor" href="#installation-instructions"><span class="octicon octicon-link">&nbsp;</span></a>Installation Instructions</h2>
 
 <ol>
 <li>Download the application (category releases)</li>
@@ -96,86 +91,17 @@
 <li>Reboot your device</li>
 <li>Now you can use DonkeyGuard</li>
 </ol><h2>
-<a name="translation" class="anchor" href="#translation"><span class="octicon octicon-link"></span></a>Translation</h2>
+<a name="translation" class="anchor" href="#translation"><span class="octicon octicon-link">&nbsp;</span></a>Translation</h2>
 
 <p>If you want to translate the application, please visit <a href="http://www.getlocalization.com/DonkeyGuard/">GetLocalization</a>. I will sync these files every release.</p>
 
 <h2>
-<a name="how-can-i-report-bugs-or-feature-requests" class="anchor" href="#how-can-i-report-bugs-or-feature-requests"><span class="octicon octicon-link"></span></a>How can I report Bugs or feature requests?</h2>
+<a name="how-can-i-report-bugs-or-feature-requests" class="anchor" href="#how-can-i-report-bugs-or-feature-requests"><span class="octicon octicon-link">&nbsp;</span></a>How can I report Bugs or feature requests?</h2>
 
 <p>Simply use the features of github to report bugs or request new features.</p>
 
-<h2>
-<a name="faq" class="anchor" href="#faq"><span class="octicon octicon-link"></span></a>FAQ</h2>
-
-<h3>
-<a name="my-device-doesnt-boot-any-more-what-can-i-do" class="anchor" href="#my-device-doesnt-boot-any-more-what-can-i-do"><span class="octicon octicon-link"></span></a>My device doesn't boot any more, what can I do?</h3>
-
-<p>Deactivate the Xposed-Framework during the boot (press volume up/down several times). If that won't work for you, please flash the RescueDonkey.zip from this repo (branch rescue). This *.zip will normally be copied at the first start of the application to your default sdcard directory.</p>
-
-<h3>
-<a name="the-internet-restriction-doesnt-work-what-can-i-do" class="anchor" href="#the-internet-restriction-doesnt-work-what-can-i-do"><span class="octicon octicon-link"></span></a>The internet restriction doesn't work, what can I do?</h3>
-
-<p>You need to install the <a href="http://www.cydiasubstrate.com">Cydia Substrate</a> Framework for Android. Simply download the Application from the PlayStore (or website) and install it. Then do following:</p>
-
-<ul>
-<li>Open the Application</li>
-<li>Tap the button "Link Substrate Files"</li>
-<li>Restart your device</li>
-</ul><p>Please make sure that DonkeyGuard is activated inside the XposedFramework, otherwise it won't work.</p>
-
-<h2>
-<a name="feature-descriptions" class="anchor" href="#feature-descriptions"><span class="octicon octicon-link"></span></a>Feature Descriptions</h2>
-
-<h3>
-<a name="deny-modes" class="anchor" href="#deny-modes"><span class="octicon octicon-link"></span></a>Deny Modes</h3>
-
-<p>In the preferences you can find two options: </p>
-
-<ul>
-<li>Softcoded Default Deny Mode</li>
-<li>Hardcoded Default Deny Mode</li>
-</ul><p>Both of the "settings" are melt together with the architecture of the application. The modes protect you against IPC failures or database error during the request of personal data from an application. To understand how it works, just take a look at the figure below (sequence diagram; This diagram is not designed for software architectures, it is as simple as possible).</p>
-
-<p><img src="http://www.bilderload.com/bild/349154/denymoderedcircleAJ3VY.png" alt="Test"></p>
-
-<p>The diagram shows the sequence of the access to private data on your phone. The call of the method where the application normally gets the private data from will be forwarded to the <strong>SettingsServer</strong>. The server identifies the process with the assistance of the kernel and asks the <strong>DatabaseManager</strong> to get the user defined settings for the calling process. The Manager fetches the data (if needed) from the database and returns it to the <strong>SettingsServer</strong>. If something went wrong with the communication between the <strong>SettingsServer</strong>, <strong>DatabaseManager</strong> or <strong>Database</strong> (red circle on the right; e.g. due to a broken database), the <strong>SettingsServer</strong> doesn't know if the application is allowed to access your private data or not. For this reason the Softcoded Default Deny mode will trigger and decide whether the application will get:</p>
-
-<ul>
-<li>The real data (allow)</li>
-<li>Fake randomized data (random)</li>
-<li>Empty data (empty)</li>
-</ul><p>You can choose this behavior inside the preference fragment. If the Softcoded Default Deny mode or the IPC with the <strong>SettingsServer</strong> fails, the Hardcoded Default Deny Mode will trigger. This mode is "hardcoded" and can't be bypassed. It has the same behavior like the Softcoded Default Deny mode, but can not be modified by the user. In future I will provide 3 versions of the application where the Hardcoded Default Deny mode has following values:</p>
-
-<ul>
-<li>Real (allow)</li>
-<li>Random (randomized generated fake data)</li>
-<li>Empty (empty values)</li>
-</ul><p>So you have to decide which behavior you prefer and download the suitable version.</p>
-
-<h3>
-<a name="default-privacy-mode" class="anchor" href="#default-privacy-mode"><span class="octicon octicon-link"></span></a>Default Privacy Mode</h3>
-
-<p>The default privacy mode is a framework feature which gives you the possibility to decide what happens if an application tries to access your private data, but no settings for the requested application have been set. The feature supports following values:</p>
-
-<ul>
-<li>Allow - The application will get access to the requested permission/data)</li>
-<li>Random - The application will get randomized generated fake data</li>
-<li>Empty - The application will get empty values</li>
-</ul><p>It is not recommended to use Random or Empty, because it could be that system applications won't work as expected anymore.</p>
-
-<h2>
-<a name="preview" class="anchor" href="#preview"><span class="octicon octicon-link"></span></a>Preview</h2>
-
-<p><img src="http://www.bilderload.com/bild/348344/screenshot20140729093144UO8BJ.png" alt=""><img src="http://www.bilderload.com/bild/348345/screenshot20140729093210D9G30.png" alt=""><img src="http://www.bilderload.com/bild/348346/screenshot20140729093216GY28T.png" alt=""><img src="http://www.bilderload.com/bild/348347/screenshot201407290932276TD10.png" alt=""><img src="http://www.bilderload.com/bild/348348/screenshot20140729093258VVWU5.png" alt=""><img src="http://www.bilderload.com/bild/348349/screenshot20140729093310VT431.png" alt=""><img src="http://www.bilderload.com/bild/348350/screenshot201407290933225VFFJ.png" alt=""></p>
         </section>
-
-        <footer>
-          Donkeyguard is maintained by <a href="https://github.com/CollegeDev">CollegeDev</a><br>
-          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
-
-        
+      	<section id="footer">&nbsp;</section>  
       </div>
     </div>
   </body>
