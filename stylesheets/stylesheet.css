@@ -299,6 +299,11 @@ ul li {
   padding-left: 20px;
 }
 
+.navi ul li {
+	display: inline-block;
+	list-style: none;
+}
+
 ol li {
   list-style: decimal inside;
   padding-left: 3px;
