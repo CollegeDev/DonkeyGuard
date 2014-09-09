@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<script type="text/javascript" src="javascripts/jquery-2.1.1.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<title>Donkeyguard by CollegeDev</title>
+		<script> 
+			$(function(){
+				$("#header").load("header.html");
+				$("#footer").load("footer.html"); 
+			});
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<div class="inner">
+				<section id="header">&nbsp;</section>
+				<section id="main_content">
+					<h2>
+						<a name="feature-descriptions" class="anchor" href="#feature-descriptions">
+							<span class="octicon octicon-link">&nbsp;</span>
+						</a>
+						Feature Descriptions
+					</h2>
+					<h3>
+						<a name="deny-modes" class="anchor" href="#deny-modes">
+							<span class="octicon octicon-link">&nbsp;</span>
+						</a>
+						Deny Modes
+					</h3>
+					<p>In the preferences you can find two options: </p>
+					<ul>
+						<li>Softcoded Default Deny Mode</li>
+						<li>Hardcoded Default Deny Mode</li>
+					</ul>
+					<p>
+						Both of the "settings" are melt together with the architecture of the application.
+						The modes protect you against IPC failures or database error during the request of personal data from an application.
+						To understand how it works, just take a look at the figure below (sequence diagram; This diagram is not designed for software architectures, it is as simple as possible).
+					</p>
+					<p>
+						<img src="http://www.bilderload.com/bild/349154/denymoderedcircleAJ3VY.png" alt="Test">
+					</p>
+					<p>
+						The diagram shows the sequence of the access to private data on your phone. 
+						The call of the method where the application normally gets the private data from will be forwarded to the <strong>SettingsServer</strong>. 
+						The server identifies the process with the assistance of the kernel and asks the <strong>DatabaseManager</strong> to get the user defined settings for the calling process. 
+						The Manager fetches the data (if needed) from the database and returns it to the <strong>SettingsServer</strong>. 
+						If something went wrong with the communication between the <strong>SettingsServer</strong>, <strong>DatabaseManager</strong> or <strong>Database</strong> (red circle on the right; e.g. due to a broken database), 
+						the <strong>SettingsServer</strong> doesn't know if the application is allowed to access your private data or not. 
+						For this reason the Softcoded Default Deny mode will trigger and decide whether the application will get:
+					</p>
+					<ul>
+						<li>The real data (allow)</li>
+						<li>Fake randomized data (random)</li>
+						<li>Empty data (empty)</li>
+					</ul>
+					<p>
+						You can choose this behavior inside the preference fragment. 
+						If the Softcoded Default Deny mode or the IPC with the <strong>SettingsServer</strong> fails, the Hardcoded Default Deny Mode will trigger. 
+						This mode is "hardcoded" and can't be bypassed. It has the same behavior like the Softcoded Default Deny mode, but can not be modified by the user. 
+						In future I will provide 3 versions of the application where the Hardcoded Default Deny mode has following values:
+					</p>
+					<ul>
+						<li>Real (allow)</li>
+						<li>Random (randomized generated fake data)</li>
+						<li>Empty (empty values)</li>
+					</ul>
+					<p>So you have to decide which behavior you prefer and download the suitable version.</p>
+					<h3>
+						<a name="default-privacy-mode" class="anchor" href="#default-privacy-mode">
+							<span class="octicon octicon-link">&nbsp;</span>
+						</a>
+						Default Privacy Mode
+					</h3>
+					<p>
+						The default privacy mode is a framework feature which gives you the possibility to decide what happens if an application tries to access your private data, but no settings for the requested application have been set. 
+						The feature supports following values:
+					</p>
+					<ul>
+						<li>Allow - The application will get access to the requested permission/data)</li>
+						<li>Random - The application will get randomized generated fake data</li>
+						<li>Empty - The application will get empty values</li>
+					</ul>
+					<p>It is not recommended to use Random or Empty, because it could be that system applications won't work as expected anymore.</p>
+				</section>
+				<section id="footer">&nbsp;</section>
+			</div>
+		</div>
+	</body>
+</html>
