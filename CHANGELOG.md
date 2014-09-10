@@ -1,4 +1,26 @@
 ## Changelog
+### v0.5.51
+Bug-Fixes:
+* Enhanced internet restriction
+* Reduced memory usage
+* Added dialog for cydia support information
+* Enhanced database access (query) speed
+* Fixed missing translations
+* Enhanced some error dialogs
+* Fixed device crashing because of network state request
+* Fixed process parsing
+* Massive internal refactoring & restructuring
+
+Features:
+* Prepared for log-feature (not accessible until now, because it will move to pro-version)
+* Added feature to enable the interception mode for every new installed application
+* Updated language: Romanian, thanks @[flashxml](http://www.getlocalization.com/user/flashxml)
+* Updated language: Portuguese (Brazil) -> thanks @[xdxita](http://www.getlocalization.com/user/xdxita)
+* Updated language: Japanese -> thanks @[WedyDQ10](http://www.getlocalization.com/user/WedyDQ10) & @[1341sakuya](http://www.getlocalization.com/user/1341sakuya)
+* Updated language: French -> @[therealcorwin](http://www.getlocalization.com/user/therealcorwin)
+
+- --
+
 ### v0.5.50
 Bug-Fixes:
 * Fixed filter manager rules
