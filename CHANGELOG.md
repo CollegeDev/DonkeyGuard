@@ -1,4 +1,14 @@
 ## Changelog
+### v0.5.52
+Bug-Fixes:
+* Minor layout improvements
+
+Features:
+* Implemented a "batch-switch" which enables the interception mode (on demand dialog) for all permissions of the application.
+* Updated translations
+
+- --
+
 ### v0.5.51
 Bug-Fixes:
 * Enhanced internet restriction
