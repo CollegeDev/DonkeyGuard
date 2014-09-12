@@ -354,6 +354,9 @@ footer a:hover {
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
 
+.invisible{
+	display: none;
+}
 /* #Media Queries
 ================================================== */
 
@@ -386,3 +389,39 @@ footer a:hover {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {}
+
+
+/*Spoiler*/
+/*------- Spoiler movement*/
+.spoiler-content {
+	-webkit-transition: height 0.7s ease-out;
+	transition: height 0.7s ease-out;
+}
+
+.spoiler {
+	width: 7.2em;
+	height: 1.6em;
+	background-color: rgba(35, 172, 27, 0.72);
+	display: inline-block;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-bottom: 0.8em;
+	-webkit-box-shadow: 0 0 1px 1px rgb(75, 61, 61);
+	box-shadow: 0 0 1px 1px rgb(75, 61, 61);
+}
+
+.spoiler span {
+	text-align: center;
+	color: #fff;
+	position: relative;
+	left: 0.45em;
+	top: 0.1em;
+}
+
+/*------- Button when activated*/
+.spoiler-active {
+	background-color: transparent;
+}
+.spoiler-active span {
+	color: #000;
+}
