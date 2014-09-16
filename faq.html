@@ -55,6 +55,35 @@
 					<p>
 						Please make sure that DonkeyGuard is activated inside the XposedFramework, otherwise it won't work.
 					</p>
+					<h3>
+						<a name="some-applications-force-close-after-installing-DonkeyGuard-what-can-i-do" class="anchor" href="#some-applications-force-close-after-installing-DonkeyGuard-what-can-i-do">
+							<span class="octicon octicon-link">&nbsp;</span>
+						</a>
+						Some application(s) force close after installing DonkeyGuard, what can I do?
+					</h3>
+					<p>
+						First make sure you're running the latest version of DonkeyGuard. 
+						If you're on the latest version and the application(s) doesn't stop to force close, please use the built-in feature "Report an error".
+						If you're able to fetch logs (from logcat) by yourself, plase do not hesitate to send them to me with a little description about the possible bug.
+					</p>
+					<h3>
+						<a name="i-cant-delete-my-settings-from-donkeyguard-what-can-I-do" class="anchor" href="#i-cant-delete-my-settings-from-donkeyguard-what-can-I-do">
+							<span class="octicon octicon-link">&nbsp;</span>
+						</a>
+						I can't delete my settings from DonkeyGuard, what can I do?
+					</h3>
+					<p>
+						Until now, DonkeyGuard doesn't support to delete the settings you've made. 
+						You need to delete them manually by removing following files:
+					</p>
+					<ul>
+						<li>/data/system/settings.db</li>
+						<li>/data/system/settings.db-shm</li>
+						<li>/data/system/settings.db-wal</li>
+					</ul>
+					<p>
+						Afterwards you need to reboot your device.
+					</p>
 				</section>
 				<section id="footer">&nbsp;</section>
 			</div>
