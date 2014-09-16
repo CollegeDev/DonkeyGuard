@@ -62,8 +62,8 @@ If you want to translate the application, please visit [GetLocalization](http://
 Simply use the features of github to report bugs or request new features.
 
 ## FAQ
-### My device doesn't boot any more, what can I do?
-Deactivate the Xposed-Framework during the boot (press volume up/down several times). If that won't work for you, please flash the RescueDonkey.zip from this repo (branch rescue). This *.zip will normally be copied at the first start of the application to your default sdcard directory.
+### My device doesn't boot any more or stucks in bootloop, what can I do?
+Deactivate the Xposed-Framework during the boot (press volume up/down several times; the device vibrates everytime the button gets touched). If that won't work for you, please flash the RescueDonkey.zip from this repo (branch rescue) or download it from [XDA](http://forum.xda-developers.com/showpost.php?p=54471912&postcount=1). The flashable RescueDonkey.zip will be copied at the first start of the application to your sdcard directory. Simply boot into the recovery mode and flash it. Please don't forget to take a snapshot of the logs (logcat) and post them on XDA.
 
 ### The internet restriction doesn't work, what can I do?
 You need to install the [Cydia Substrate](http://www.cydiasubstrate.com) Framework for Android. Simply download the Application from the PlayStore (or website) and install it. Then do following:
