@@ -1,4 +1,24 @@
 ## Changelog
+### v0.5.54
+Bug-Fixes:
+* Fixed internet-restriction bug (FC due to multithreading bug)
+
+Features:
+* Updated all languages
+* Pre-Prepared for location-picker plugin
+
+- --
+
+### v0.5.53
+Bug-Fixes:
+* Fixed possible Layout-Bug for LG G3
+* Fixed unnecessary database synchronization
+
+Features:
+* Implemented built-in error report
+
+- --
+
 ### v0.5.52
 Bug-Fixes:
 * Minor layout improvements
