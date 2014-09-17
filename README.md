@@ -86,6 +86,9 @@ Until now, DonkeyGuard doesn't support to delete the settings you've made. You n
 
 Afterwards you need to reboot your device.
 
+### How can I provide logs which may help you to fix the reported bug?
+Since v0.5.53, a built-in error report exists. If you don't know how to fetch logs, please use this feature directly after your reported bug occurs. If you want to provide (possibly) more information, you can use the application [CatLog](https://play.google.com/store/apps/details?id=com.nolanlawson.logcat) to fetch logs. Afterwards please open an issue at my github or post them on XDA. Furthermore: please do not forget to describe your problem.
+
 ## Feature Descriptions
 ### Deny Modes
 In the preferences you can find two options: 
