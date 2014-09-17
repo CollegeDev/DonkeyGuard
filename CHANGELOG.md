@@ -1,4 +1,17 @@
 ## Changelog
+### v0.5.55
+Bug-Fixes:
+* Fixed unsupported API 15
+* Minor layout improvements
+* Added the ability to hide a hint dialog
+* Improved dialog layouts
+* Improved hints
+
+Features:
+* Enabled LOG feature for non-pro user (with limited information)
+
+- --
+
 ### v0.5.54
 Bug-Fixes:
 * Fixed internet-restriction bug (FC due to multithreading bug)
