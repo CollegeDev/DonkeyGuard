@@ -1,4 +1,15 @@
 ## Changelog
+### v0.5.56
+Bug-Fixes:
+* Fixed possible FC with API 15 (ICS)
+* Fixed UI-Instructor glitches
+
+Features:
+* Minor internal refactoring to support Add-Ons
+* Added compatibility with Location Picker Addon
+
+- --
+
 ### v0.5.55
 Bug-Fixes:
 * Fixed unsupported API 15
