@@ -65,6 +65,13 @@ Simply use the features of github to report bugs or request new features.
 ### My device doesn't boot any more or stucks in bootloop, what can I do?
 Deactivate the Xposed-Framework during the boot (press volume up/down several times; the device vibrates everytime the button gets touched). If that won't work for you, please flash the RescueDonkey.zip from this repo (branch rescue) or download it from [XDA](http://forum.xda-developers.com/showpost.php?p=54471912&postcount=1). The flashable RescueDonkey.zip will be copied at the first start of the application to your sdcard directory. Simply boot into the recovery mode and flash it. Please don't forget to take a snapshot of the logs (logcat) and post them on XDA.
 
+### How can I provide logs during a bootloop?
+First, you need to install ADB. If you don't know what it is, simply follow [this](http://lifehacker.com/the-easiest-way-to-install-androids-adb-and-fastboot-to-1586992378) great guide to install it (it is pretty simple; only ~1 minute of your time is required for the installation). If adb is installed, simply use the command (cmd-line/terminal): 
+
+    adb logcat -d > log.txt
+
+to dump the logs. Run this command during the bootloop (it should at least bootloop one time before you dump the logs) and send the log.txt to me or post an issue at my github.
+
 ### The internet restriction doesn't work, what can I do?
 You need to install the [Cydia Substrate](http://www.cydiasubstrate.com) Framework for Android. Simply download the Application from the PlayStore (or website) and install it. Then do following:
 
