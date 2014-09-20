@@ -120,6 +120,16 @@ You can choose this behavior inside the preference fragment. If the Softcoded De
 
 So you have to decide which behavior you prefer and download the suitable version.
 
+### Default Privacy Mode
+The default privacy mode is a framework feature which gives you the possibility to decide what happens if an application tries to access your private data, but no settings for the requested application have been set. The feature supports following values: 
+
+* Allow - The application will get access to the requested permission/data)
+* Random - The application will get randomized generated fake data
+* Empty - The application will get empty values
+
+It is not recommended to use Random or Empty, because it could be that system applications won't work as expected anymore.
+
+
 ## Preview
 ![](http://www.bilderload.com/bild/348344/screenshot20140729093144UO8BJ.png)
 ![](http://www.bilderload.com/bild/348345/screenshot20140729093210D9G30.png)  ![](http://www.bilderload.com/bild/348346/screenshot20140729093216GY28T.png)  ![](http://www.bilderload.com/bild/348347/screenshot201407290932276TD10.png)   ![](http://www.bilderload.com/bild/348348/screenshot20140729093258VVWU5.png)  ![](http://www.bilderload.com/bild/348349/screenshot20140729093310VT431.png)  ![](http://www.bilderload.com/bild/348350/screenshot201407290933225VFFJ.png) 
