@@ -1,4 +1,13 @@
 ## Changelog
+### v0.5.57
+Bug-Fixes:
+* Temporary disabled read/write external storage permission, because of heavy battery drainage on some devices
+
+Features:
+* DonkeyGuard Location Picker is now available at [PlayStore](https://play.google.com/store/apps/details?id=eu.donkeyguard.locationpicker)
+
+- --
+
 ### v0.5.56
 Bug-Fixes:
 * Fixed possible FC with API 15 (ICS)
