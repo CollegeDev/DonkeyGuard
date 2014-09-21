@@ -1,4 +1,16 @@
 ## Changelog
+### v0.5.58
+Bug-Fixes:
+* Fixed Gui-Glitches within the settings activity
+
+Features:
+* Revamped Read/Write external storage permission
+* Added language: Spanish, thx @[dukelc](http://www.getlocalization.com/user/dukelc)
+* Added language: Turkish, thx @[lastdark](http://www.getlocalization.com/user/lastdark)
+* Added language: Slovak, thx @[Ocab19](http://www.getlocalization.com/user/Ocab19)
+
+- --
+
 ### v0.5.57
 Bug-Fixes:
 * Temporary disabled read/write external storage permission, because of heavy battery drainage on some devices
