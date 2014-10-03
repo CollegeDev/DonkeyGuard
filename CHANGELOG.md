@@ -1,4 +1,21 @@
 ## Changelog
+### v0.5.59-63
+Bug-Fixes:
+* Fixed Gui-Glitches
+* Layout improvements
+* Fixed initial restriction count, triggered by the on demand dialog
+* Fixed contact picking bug
+* Performance improvements
+* Reduced battery usage
+* Fixed FC on ICS-Devices (API 15)
+* Several Bug-fixes reported through the built-in error report
+
+Features:
+* Implemented pro feature in-app shop where you can buy additional pro features
+* Revamped filter logic
+
+- --
+
 ### v0.5.58
 Bug-Fixes:
 * Fixed Gui-Glitches within the settings activity
