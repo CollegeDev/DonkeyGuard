@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<script type="text/javascript" src="javascripts/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="javascripts/main.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<title>Donkeyguard by CollegeDev</title>
+	</head>
+	<body>
+	    <div id="container">
+		    <div class="inner">
+		      	<section id="header">&nbsp;</section>
+		      	<section id="media_area">&nbsp;</section>
+		        <section id="main_content">
+					<h2>
+						<a name="faq" class="anchor" href="#faq">
+							<span class="octicon octicon-link">&nbsp;</span>
+						</a>
+						FAQ
+					</h2>
+					<h3>
+						<a name="my-device-doesnt-boot-any-more-what-can-i-do" class="anchor" href="#my-device-doesnt-boot-any-more-what-can-i-do">
+							<span class="octicon octicon-link">&nbsp;</span>
+						</a>
+						My device doesn't boot any more, what can I do?
+					</h3>
+						<p>
+							Deactivate the Xposed-Framework during the boot (press volume up/down several times). 
+							If that won't work for you, please flash the RescueDonkey.zip from this repo (branch rescue). 
+							This *.zip will normally be copied at the first start of the application to your default sdcard directory.
+						</p>
+					<h3>
+						<a name="the-internet-restriction-doesnt-work-what-can-i-do" class="anchor" href="#the-internet-restriction-doesnt-work-what-can-i-do">
+							<span class="octicon octicon-link">&nbsp;</span>
+						</a>
+						The internet restriction doesn't work, what can I do?
+					</h3>
+					<p>
+						You need to install the <a href="http://www.cydiasubstrate.com">Cydia Substrate</a> Framework for Android. 
+						Simply download the Application from the PlayStore (or website) and install it. Then do following:
+					</p>
+					<ul>
+						<li>Open the Application</li>
+						<li>Tap the button "Link Substrate Files"</li>
+						<li>Restart your device</li>
+					</ul>
+					<p>
+						Please make sure that DonkeyGuard is activated inside the XposedFramework, otherwise it won't work.
+					</p>
+					<h3>
+						<a name="some-applications-force-close-after-installing-DonkeyGuard-what-can-i-do" class="anchor" href="#some-applications-force-close-after-installing-DonkeyGuard-what-can-i-do">
+							<span class="octicon octicon-link">&nbsp;</span>
+						</a>
+						Some application(s) force close after installing DonkeyGuard, what can I do?
+					</h3>
+					<p>
+						First make sure you're running the latest version of DonkeyGuard. 
+						If you're on the latest version and the application(s) doesn't stop to force close, please use the built-in feature "Report an error".
+						If you're able to fetch logs (from logcat) by yourself, plase do not hesitate to send them to me with a little description about the possible bug.
+					</p>
+					<h3>
+						<a name="i-cant-delete-my-settings-from-donkeyguard-what-can-I-do" class="anchor" href="#i-cant-delete-my-settings-from-donkeyguard-what-can-I-do">
+							<span class="octicon octicon-link">&nbsp;</span>
+						</a>
+						I can't delete my settings from DonkeyGuard, what can I do?
+					</h3>
+					<p>
+						Until now, DonkeyGuard doesn't support to delete the settings you've made. 
+						You need to delete them manually by removing following files:
+					</p>
+					<ul>
+						<li>/data/system/settings.db</li>
+						<li>/data/system/settings.db-shm</li>
+						<li>/data/system/settings.db-wal</li>
+					</ul>
+					<p>
+						Afterwards you need to reboot your device.
+					</p>
+				</section>
+				<section id="footer">&nbsp;</section>
+			</div>
+		</div>
+	</body>
+</html>
