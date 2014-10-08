@@ -82,7 +82,12 @@ You need to install the [Cydia Substrate](http://www.cydiasubstrate.com) Framewo
 Please make sure that DonkeyGuard is activated inside the XposedFramework, otherwise it won't work.
 
 ### Some application(s) force close after installing DonkeyGuard, what can I do?
-First make sure you're running the latest version of DonkeyGuard. If you're on the latest version and the application(s) doesn't stop to force close, please use the built-in feature "Report an error". If you're able to fetch logs (from logcat) by yourself, plase do not hesitate to send them to me with a little description about the possible bug.
+First make sure you're running the latest version of DonkeyGuard. If you're on the latest version and the application(s) doesn't stop to force close, please use the built-in feature "Report an error" in following steps:
+* Wait until the problem occurs again (e.g. Force Close of an application)
+* Open DonkeyGuard and swipe from the right to left to open the preferences
+* In preference category "Logs" you can find the option "Report An Error"; simply tap, describe your problem (important!) and send me the logs.
+
+If you're able to fetch logs (from logcat) by yourself, plase do not hesitate to send them to me with a little description about the possible bug.
 
 ### I can't delete my settings from DonkeyGuard, what can I do?
 Until now, DonkeyGuard doesn't support to delete the settings you've made. You need to delete them manually by removing following files:
