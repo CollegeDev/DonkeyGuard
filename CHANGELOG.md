@@ -1,4 +1,49 @@
 ## Changelog
+### v0.56.67
+Bug-Fixes:
+* Fixed repetitive on-demand prompts
+* Fixed on-demand prompts for system and kernel
+* Internal restructuring of process parsing
+* Fixed bugs reported through the in-built error reporter
+
+Features:
+* Added and updates languages
+
+- --
+
+### v0.56.66
+Bug-Fixes:
+* Fixed UI-Glitches
+* Fixed all reported bugs
+
+Features:
+* Added the possibility to one-click remove all privacy settings
+* Restructured parts of the preferences categories
+* Updated translations
+* Added language: Chinese, thx @surwscl, @aqinny
+
+- --
+
+### v0.56.65
+Bug-Fixes:
+* Fixed errors reported through the built-in error report
+* Several bug fixes
+
+Features:
+* ...
+
+- --
+
+### v0.56.64
+Bug-Fixes:
+* Fixed internet restriction
+* Several layout improvements
+
+Features:
+* ...
+
+- --
+
 ### v0.5.59-63
 Bug-Fixes:
 * Fixed Gui-Glitches
